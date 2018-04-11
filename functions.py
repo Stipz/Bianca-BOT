@@ -70,9 +70,8 @@ async def checkPSO2EQ(bot):
                     #Builds string
                     string = '\n'.join(eqs)
                     rodos2 = '\n'.join(rodos)
-                    message = (':loudspeaker: EQ Forecast '
-                               'for the next hour : __JST:__ **{:02d}00HRS** / '
-                               '__GMT+8:__ **{:02d}00HRS** / __GMT+7:__ **{:02d}00HRS**\n\n{}\n{}'.format(eqtime, eqph, eqth, string, rodos2))
+                    message = (':loudspeaker: EQ Update '
+                               'JST:**{:02d}00HRS** / GMT+8: **{:02d}00HRS** / GMT+7:**{:02d}00HRS**\n\n{}\n{}'.format(eqtime, eqph, eqth, string, rodos2))
                     # Checks if current EQ is different from the last one
                     # recorded AND if there is an EQ
                     if last_eq['jst'] != eqtime:
